@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Quiz Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">QuizMaster</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to QuizMaster</h1>
+      <p>Test your knowledge and get instant results!</p>
+      <a href="#quiz" class="btn">Start Quiz</a>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="quiz">
+    <h2>General Knowledge Quiz</h2>
+    <form id="quiz-form" class="quiz-form">
+
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. What is the capital city of France?</p>
+        <label><input type="radio" name="q1" value="a"> Berlin</label><br>
+        <label><input type="radio" name="q1" value="b"> Madrid</label><br>
+        <label><input type="radio" name="q1" value="c"> Paris</label><br>
+        <label><input type="radio" name="q1" value="d"> Rome</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. Who developed the theory of relativity?</p>
+        <label><input type="radio" name="q2" value="a"> Isaac Newton</label><br>
+        <label><input type="radio" name="q2" value="b"> Albert Einstein</label><br>
+        <label><input type="radio" name="q2" value="c"> Nikola Tesla</label><br>
+        <label><input type="radio" name="q2" value="d"> Galileo Galilei</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. What is the largest planet in our Solar System?</p>
+        <label><input type="radio" name="q3" value="a"> Earth</label><br>
+        <label><input type="radio" name="q3" value="b"> Jupiter</label><br>
+        <label><input type="radio" name="q3" value="c"> Saturn</label><br>
+        <label><input type="radio" name="q3" value="d"> Mars</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4. Which language is primarily used for web development?</p>
+        <label><input type="radio" name="q4" value="a"> C++</label><br>
+        <label><input type="radio" name="q4" value="b"> JavaScript</label><br>
+        <label><input type="radio" name="q4" value="c"> Python</label><br>
+        <label><input type="radio" name="q4" value="d"> Swift</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <p>5. Who painted the Mona Lisa?</p>
+        <label><input type="radio" name="q5" value="a"> Vincent van Gogh</label><br>
+        <label><input type="radio" name="q5" value="b"> Pablo Picasso</label><br>
+        <label><input type="radio" name="q5" value="c"> Leonardo da Vinci</label><br>
+        <label><input type="radio" name="q5" value="d"> Michelangelo</label>
+      </div>
+
+      <button type="submit" class="btn">Submit Quiz</button>
+    </form>
+
+    <!-- Score Display -->
+    <div id="result" class="result"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 QuizMaster | All Rights Reserved</p>
+  </footer>
+
+ 
+  <script src="script.js"></script> 
+</body>
+</html>
